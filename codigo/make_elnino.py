@@ -5,7 +5,9 @@ import make_corvo as C
 import make_lua as L
 from make_corvo import (W, H, FPS, YELLOW, WHITE, SOFT, paste_crow, star, LH, S2)
 from make import ease_out, ease_back
-from make_lua import ctext
+from make_lua import ctext as _ctext
+def ctext(d, x, y, s_, size, fill):
+    if size >= 2: _ctext(d, x, y, s_, size, fill)
 
 RED = (240, 80, 70); ORANGE = (255, 150, 60); BLUE = (70, 140, 240); DBLUE = (40, 80, 170)
 CLOUD = (120, 112, 165); SAND = (226, 186, 120); WOOD = (150, 98, 60)
