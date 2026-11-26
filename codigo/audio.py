@@ -1,6 +1,6 @@
 import numpy as np, wave
 SR = 44100
-durs = [4.66, 6.69, 5.86, 5.53, 5.71, 4.6, 5.1]
+durs = [11.708, 13.817, 9.564, 11.122, 9.904, 8.361, 13.728, 8.115]
 T = sum(durs)
 n = int(T * SR); t = np.arange(n) / SR
 out = np.zeros(n)
